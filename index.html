@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Retro+Gaming&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+      body {
+
+        margin: 0;
+        padding: 0;
+        background-color: #d4041c;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+      }
+      .header {
+        width: 92%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+      }
+      .header-right {
+        display: flex;
+        align-items: center;
+      }
+      .header-right p {
+        margin-right: 10px;
+      }
+      .header-right img {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+        margin-left: 10px;
+      }
+      .box-container {
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .box {
+        width: 50%;
+      }
+      .left {
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .esquerda{
+        background-color: #000;
+        color: #FFF;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 470px;
+      }
+      .centraliza-box {
+        padding-right: 20%;
+        padding-left: 20%;
+      }
+      .right {
+        background-color: #900;
+        color: #fff;
+        text-align: center;
+      }
+      .direita {
+        background-color: #fff;
+        color: #900;
+        text-align: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      h1,
+      p {
+        margin: 0;
+      }
+      .img-anos {
+        width: 100%;
+        height: 100%;
+      }
+      .cor-red {
+        color: rgb(214, 0, 28);
+        font-family: 'Retro Gaming', sans-serif; 
+        font-weight: bold;
+      }
+       .cor-red.titulo {
+        color: rgb(214, 0, 28);
+        font-family: 'VT323', monospace!important;
+        font-size: 24px;
+      
+        font-weight: bold;
+      }
+      .cor-red.titulo.principal {
+        color: rgb(214, 0, 28);
+        font-family: 'VT323', monospace!important;
+        font-size: 48px!important;
+        font-weight: bold;
+      }
+      .titulo-principal{
+        font-family: 'VT323', monospace!important;
+        font-size: 48px!important;
+        font-weight: bold;
+      }
+      #player {
+        width: 300px;
+        padding: 20px;
+        color: white;
+        display: flex;
+        align-items: center;
+      }
+      #player img {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+      }
+      #player button {
+        margin-left: auto;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 20px;
+      }
+      #progressBar {
+        width: 300px; /* largura da barra de progresso */
+        height: 4px; /* altura da barra de progresso */
+        background-color: #ffffff6b; /* cor de fundo da barra de progresso */
+        margin-bottom: 30px; /* espaço entre a barra de progresso e o player */
+      }
+      #progress {
+        width: 0; /* a largura da barra de progresso será ajustada dinamicamente */
+        height: 4px;
+        background-color: #fff;
+      }
+      .aperte-play {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: normal;
+        color: #fff;
+      }
+      .presenca{
+        width: 40%;
+        padding: 20px;
+        background-color: #fff;
+        text-align: center; margin-top: 40px;
+      }
+      .letra-retro{
+        font-family: 'Press Start 2P', cursive; /* Aplicar a fonte retro/vintage ao corpo do documento */
+        color: #fff;
+        font-size: 16px;
+      }
+      .container-player{
+        width: 25%; 
+        text-align: center; 
+        margin-top: 50px;
+      }
+      .letra-retro2{
+        font-family: 'Pacifico', cursive;
+      }
+      .box-container.cards-info{
+        height: 470px!important;
+        margin-top: 8%!important;
+      }
+      a {
+            text-decoration: none;
+            color: transparent; /* Garante que a cor do texto seja herdada */
+        }
+        @media (max-width: 768px) {
+      .box-container {
+        height: 320px!important;
+        flex-direction: column;
+        margin-bottom: 38px!important;
+         margin-top: 32px!important;
+      }
+      .box-container.cards-info{
+        height: 320px!important;
+        margin-top: 90%!important;
+        margin-bottom: 90%!important;
+      }
+      .container-player{
+        width: 75%; 
+        text-align: center; 
+        margin-top: 50px;
+      }
+      .aperte-play{
+        font-size: 22px!important;
+      }
+      .box {
+        width: 100%;
+      }
+      #carouselExampleIndicators{
+        margin-top: 55%!important;
+        width: 92%!important;
+      }
+      .box{
+        height: 330px!important;
+      }
+      .centraliza-box{
+        height: 100%;
+      }
+      iframe{
+        height: 320px!important;
+      }
+      .img-anos {
+
+        height: 330px!important;
+        }
+      .cor-red.titulo.principal{
+        margin-top: 0px!important;
+        margin-bottom: 20px!important;
+        font-size: 32px!important;
+      }
+      .centraliza-box {
+      padding: 4% 5% 6% 5% !important;
+      height: 330px!important;
+    }
+ 
+    .cor-red{
+      font-size: 15px!important;
+    }
+    .cor-red.titulo{
+      font-size: 20px!important;
+    }
+    p{
+    padding-left: 5px!important;
+    padding-right: 5px!important;
+    }
+    .text{
+      margin-top: 10%!important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    
+    }
+    .container-footer{
+      margin-bottom: 10%!important;
+    }
+    .titulo-principal.black{
+      margin-top: 35px!important;
+    }
+    .header-left{
+    width: 35%!important;}
+     }
+    .carousel-item img {
+      width: 280px!important;
+      height: 400px; /* Defina a altura desejada para as imagens */
+      object-fit: cover; /* Garante que a imagem preencha o contêiner */
+      display: flex; justify-content: center; align-items: center;
+    }
+    .carousel-item{
+      margin-right: 0px!important;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <h1 class="letra-retro">JUCASFA 27 ANOS</h1>
+      </div>
+      <div class="header-right">
+        <a style="text-decoration: none; color: #fff" href="./inicio.html"
+          ><p class="">Página inicial</p></a
+        >
+        <a href="https://www.instagram.com/jucasfa/"
+          ><img
+            style="margin-top: 5px"
+            src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_20,h_20,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/alt_text_label_Instagram.png"
+            alt="Ícone do Instagram"
+        /></a>
+      </div>
+    </header>
+    <div class="container-player">
+      <h2 class="aperte-play">APERTE O PLAY PARA O DJ SOLTAR O SOM!</h2>
+    </div>
+    <div id="player">
+      <img
+        src="https://static.wixstatic.com/media/nsplsh_8ebadbb5665e414a8295611ac98f9a9b~mv2.jpg/v1/fill/w_140,h_140,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/nsplsh_8ebadbb5665e414a8295611ac98f9a9b~mv2.jpg"
+        alt="Album Cover"
+      />
+      <div id="songInfo">Billie Jean - Michael Jackson</div>
+      <button id="playButton">
+        <svg
+          width="18px"
+          height="20px"
+          viewBox="0 0 18 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g fill="currentcolor">
+            <path
+              d="M17.29,9.02 C18.25,9.56 18.25,10.44 17.29,10.98 L1.74,19.78 C0.78,20.33 0,19.87 0,18.76 L0,1.24 C0,0.13 0.78,-0.32 1.74,0.22 L17.29,9.02 Z"
+            ></path>
+          </g>
+        </svg>
+      </button>
+    </div>
+    <div id="progressBar">
+      <div id="progress"></div>
+    </div>
+
+    <audio id="audioPlayer" src="videomp3.mp3"></audio>
+
+    <div class="box-container">
+      <div class="box left">
+        <div class="centraliza-box">
+          <h3 class="cor-red titulo principal" style=" margin-bottom: 30px">
+            OLÁ!
+          </h3>
+          <p class="cor-red">
+            Você está convidado para uma celebração incrível. O JUCASFA comemora
+            seus 27 anos com uma festa inspirada nos anos 80!
+          </p>
+          <br />
+        
+          <p class="cor-red">
+            Prepare-se para voltar no tempo! Vista sua melhor roupa dos anos 80,
+            encha-se de confiança e venha se juntar a nós para uma noite cheia
+            de nostalgia e alegria!
+          </p>
+          <br />
+         
+          <p class="cor-red titulo">Esperamos você!</p>
+        </div>
+      </div>
+      <div class="box right">
+        <img
+          class="img-anos"
+          src="https://static.wixstatic.com/media/c83b57_64ff8824e20c4ee39aeef9ecf90b270e~mv2.png/v1/fill/w_872,h_466,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c83b57_64ff8824e20c4ee39aeef9ecf90b270e~mv2.png"
+          alt="Imagem Provisória"
+        />
+      </div>
+    </div>
+
+    <div class="box-container cards-info">
+      <div class="box esquerda">
+        <div class="centraliza-box">
+          <p class="titulo-principal black" style="margin-top: -30px; margin-bottom: 30px; color: #FFF;">
+            Mas jucasfa, onde será essa festa?
+          </p>
+        </div>
+    
+      </div>
+      <div class="box direita">
+      
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28807.501969375553!2d-54.57768057545122!3d-25.507122662752618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6908fe3ffffff%3A0xd4c89d5601d73029!2sVila%20A%20Park!5e0!3m2!1spt-BR!2sbr!4v1713628224403!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    
+    <div class="box-container" style="margin-top: 8%; height: 470px!important;">
+      
+      <div class="box esquerda" >
+ 
+          <div class="centraliza-box">
+            <p class="titulo-principal black" style="margin-top: -30px; margin-bottom: 30px; color: #FFF;">
+              Mas... o que eu tenho que levar?
+            </p>
+          </div>
+  
+      </div>
+      <div class="box direita">
+        <div class="centraliza-box">
+          <h3 class="cor-red titulo principal" style="margin-top: -30px; margin-bottom: 30px">
+            Vocês não vão acreditar...
+          </h3>
+          <p class="cor-red">
+            Com o valor de R$10,00, você participa de uma festa linda e animada, com comida e Open de Pista de Dança.
+          </p>
+          <br />
+         
+          <p class="cor-red">
+            Tragam muita animação e bons trajes, e também o que querem beber! Refrigerante, suco, o que vocês preferirem!!
+          </p>
+          <br />
+       
+          <p class="cor-red titulo">Algumas ideias de look para você arrasar: </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="carouselExampleIndicators" style="z-index: 1000; margin-top: 4%; width: 30%; background-color: #000; display: flex; justify-content: center; align-items: center;" class="carousel carousel" >
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 9"></button>
+      </div>
+      <div class="carousel-inner" style="width: auto; display: flex; justify-content: center; align-items: center;">
+        <div class="carousel-item active">
+          <img src="anos80.jpg" class="d-block w-100" alt="imagem 1">
+        </div>
+        <div class="carousel-item">
+          <img src="anos801.jpg" class="d-block w-100" alt="imagem 2">
+        </div>
+        <div class="carousel-item">
+          <img src="anos803.jpg" class="d-block w-100" alt="imagem 3">
+        </div>
+        <div class="carousel-item">
+          <img src="anos807.jpg" class="d-block w-100" alt="imagem 4">
+        </div>
+        <div class="carousel-item">
+          <img src="anos805.jpg" class="d-block w-100" alt="imagem 5">
+        </div>
+        <div class="carousel-item">
+          <img src="anos806.jpg" class="d-block w-100" alt="imagem 6">
+        </div>
+        <div class="carousel-item">
+          <img src="anos808.jpg" class="d-block w-100" alt="imagem 7">
+        </div>
+        <div class="carousel-item">
+          <img src="anos809.jpg" class="d-block w-100" alt="imagem 8">
+        </div>
+      
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+   
+
+    <div class="container-footer" style="margin-top: 5%;  height: 18%;">
+      <div class="text">
+          <p style="font-family:'Pacifico', cursive; font-size: 24px; color: #fff; font-weight: bold;">Gostou? Então clica no globo para confirmar sua presença!!!</p>
+      </div>
+      <div style="margin-top: 4%; margin-bottom: 30px;display: flex; justify-content: center; align-items: center;">
+          <a href="https://www.globo.com/" target="_blank">
+              <img src="globo.png"  height="100px!important" alt="Globo">
+          </a>
+      </div>
+  </div>
+    <script>
+      document
+        .getElementById("playButton")
+        .addEventListener("click", function () {
+          var audioPlayer = document.getElementById("audioPlayer");
+          if (audioPlayer.paused) {
+            audioPlayer.play();
+            this.innerHTML =
+              '<svg width="18px" height="20px" viewBox="0 0 18 20" xmlns="http://www.w3.org/2000/svg"><g fill="currentcolor"><path d="m0,0.99c0,-0.55 0.45,-0.99 0.99,-0.99l4.02,0c0.55,0 0.99,0.46 0.99,0.99l0,18.02c0,0.55 -0.45,0.99 -0.99,0.99l-4.02,0c-0.55,0 -0.99,-0.46 -0.99,-0.99l0,-18.02zm10,0c0,-0.55 0.45,-0.99 0.99,-0.99l4.02,0c0.55,0 0.99,0.46 0.99,0.99l0,8.02c0,10.55 -0.45,10.99 -0.99,10.99l-4.02,0c-0.55,0 -0.99,-0.46 -0.99,-0.99l0,-18.02z"></path></g></svg>';
+          } else {
+            audioPlayer.pause();
+            this.innerHTML =
+              '<svg width="18px" height="20px" viewBox="0 0 18 20" xmlns="http://www.w3.org/2000/svg"><g fill="currentcolor"><path d="M17.29,9.02 C18.25,9.56 18.25,10.44 17.29,10.98 L1.74,19.78 C0.78,20.33 0,19.87 0,18.76 L0,1.24 C0,0.13 0.78,-0.32 1.74,0.22 L17.29,9.02 Z"></path></g></svg>';
+          }
+          var audioPlayer = document.getElementById("audioPlayer");
+          var progressBar = document.getElementById("progress");
+
+          audioPlayer.addEventListener("timeupdate", function () {
+            var progress =
+              (audioPlayer.currentTime / audioPlayer.duration) * 100;
+            progressBar.style.width = progress + "%";
+          });
+
+          progressBar.addEventListener("click", function (event) {
+            var clickPosition = event.offsetX;
+            var progressBarWidth = this.offsetWidth;
+            var percentage = clickPosition / progressBarWidth;
+            audioPlayer.currentTime = audioPlayer.duration * percentage;
+          });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+</html>

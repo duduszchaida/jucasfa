@@ -134,7 +134,7 @@ section p {
 	text-align: center;
 }
 .banner-area .banner-img {
-	background-image: url(jucasfa.jpg);
+	background-image: url(../jucasfa.jpg);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -241,7 +241,7 @@ ul.about-content {
 /*msg area*/
 
 .msg-area {
-	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(a2.jpeg);
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../a2.jpeg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;

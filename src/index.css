@@ -27,6 +27,7 @@ html {
 
 .carousel-item {
     display: flex;
+	border: none!important;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -40,6 +41,7 @@ html {
 }
 
 .carousel-item h4 {
+	
     margin-top: 10px;
     font-size: 18px;
     color: #333; /* Cor do texto */
@@ -92,25 +94,8 @@ header ul.nav li:first-child {
 header ul.nav li:last-child {
 	margin-right: 0;
 }
-@media(max-width:1000px) {
-	header {
-		padding: 20px 50px;
-	}
-}
-@media (max-width:700px) {
-	header {
-		flex-direction: column;
-	}
-	header h2 {
-		margin-bottom: 15px;
-	}
-	header ul.nav li {
-		margin: 0 7px;
-	}
-	.about-right p {
-		display: none;
-	}
-}
+
+
 /*banner area*/
 
 section {
@@ -189,9 +174,7 @@ section p {
 	text-transform: uppercase;
 }
 @media (max-width:800px) {
-	.banner-area {
-		min-height: 600px;
-	}
+	
 	.banner-area h1 {
 		font-size: 27px;
 	}
@@ -215,17 +198,14 @@ ul.about-content {
 	justify-content: center;
 }
 .about-content li {
-	padding: 20px;
-	height: 500px;
+
+	
 	background-clip: content-box;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
 }
-.about-left {
-	flex-basis: 30%;
-	background-image: url(jucao.jpg);
-}
+
 .about-right {
 	flex-basis: 70%;
 }
@@ -235,14 +215,14 @@ ul.about-content {
 .about-area p {
 	max-width: 800px;
 	margin-bottom: 35px;
+
 	line-height: 1.5;
 	text-align: left;
 	padding-left: 0;
 }
 .section-title {
 	text-transform: uppercase;
-	font-size: 50px;
-	margin-bottom: 5%;
+
 }
 .section-title span {
 	color: #bf0a30;
@@ -257,17 +237,7 @@ ul.about-content {
 	text-transform: uppercase;
 	color: #fff;
 }
-@media (max-width: 1000px) {
-	.section-title {
-		font-size: 35px;
-	}
-	.about-left, .about-right {
-		flex-basis: 100%;
-	}
-	.about-content li {
-		padding: 8px;
-	}
-}
+
 /*msg area*/
 
 .msg-area {
@@ -336,7 +306,7 @@ ul.contact-content {
 }
 .contact-content li {
 	padding: 0 30px;
-	flex-basis: 33%;
+
 	text-align: center;
 }
 .contact-content li i {
@@ -347,18 +317,7 @@ ul.contact-content {
 .contact-content li p {
 	margin: 0;
 }
-@media (max-width: 1000px) {
-	.contact-content li {
-		flex-basis: 100%;
-		margin-bottom: 65px;
-	}
-	.contact-content li:last-child {
-		margin-bottom: 0;
-	}
-	.contact-content li p {
-		padding: 0;
-	}
-}
+
 /*footer*/
 
 footer {

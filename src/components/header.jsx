@@ -17,9 +17,7 @@ function Header() {
         <li>
           <a href="/#contact">Contatos</a>
         </li>
-        <li>
-          <Link to="/querigma">Querigma</Link>
-        </li>
+        
       </ul>
     </header>
   );

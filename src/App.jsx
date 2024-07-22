@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Principal />} />
-        <Route path="/querigma" element={<Querigma />} />
+        <Route path="./querigma" element={<Querigma />} />
       </Routes>
       <Footer />
     </BrowserRouter>

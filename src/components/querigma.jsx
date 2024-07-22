@@ -13,9 +13,8 @@ function Querigma() {
   const videos = [
     { id: 'dQw4w9WgXcQ', title: 'Video 1' },
     { id: 'k85mRPqvMbE', title: 'Video 2' },
-    { id: '3JZ_D3ELwOQ', title: 'Video 3' },
-    { id: 'C0DPdy98e4c', title: 'Video 4' },
-    { id: '60ItHLz5WEA', title: 'Video 5' }
+    { id: '3JZ_D3ELwOQ', title: 'Video 3' }
+   
   ];
 
   const opts = {
@@ -59,7 +58,8 @@ function Querigma() {
         <YouTube videoId={mainVideoId} opts={opts} />
       </div>
       <div className="side-carousel">
-        <Carousel value={videos} itemTemplate={itemTemplate} numVisible={3} numScroll={1} vertical responsiveOptions={responsiveOptions} />
+        <Carousel value={videos} itemTemplate={itemTemplate} numVisible={3} numScroll={1} orientation="vertical"  />
+        
       </div>
     </div>
   );

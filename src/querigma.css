@@ -4,11 +4,18 @@
     gap: 20px;
     padding: 20px;
   }
-  
+  body {
+    background: linear-gradient(rgba(44, 42, 35, 0.6), rgba(148, 134, 116, 0.6)), url("sao-tomas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   .main-video {
     flex: 3;
   }
-  
+  .p-carousel-items-content{
+    height: auto!important;
+  }
   .side-carousel {
     flex: 1;
     display: flex;
@@ -40,5 +47,6 @@
   .carousel-item h4 {
     margin-top: 10px;
     font-size: 1rem;
+    color: black;
   }
   

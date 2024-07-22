@@ -111,18 +111,18 @@ function Principal() {
         <ul className="contact-content">
           <li className='col-4 xl:col-2 p-0 xl:p-3'>
             <i className="pi pi-map-marker text-4xl xl:text-6xl mb-2 xl:mb-4"></i>
-            <p className='line-height-2 text-sm xl:text-base p-0 xl:p-3'>R. Guairacá - Jardim Santa Rosa
+            <p className='line-height-2 text-mob xl:text-base p-1 xl:p-3'>R. Guairacá - Jardim Santa Rosa
               nº 64</p>
           </li>
           <li className='col-4 xl:col-2 p-0 xl:p-3'>
             <i className="pi pi-mobile text-4xl xl:text-6xl mb-2 xl:mb-4"></i>
-            <p className='line-height-2 text-sm xl:text-base p-1 xl:p-3'>
+            <p className='line-height-2 text-mob xl:text-base p-1 xl:p-3'>
             Paty (45)99155-0933        <h4>Coordenadora</h4></p>
               
           </li>
           <li className='col-4 xl:col-2 p-0 xl:p-3'>
             <i className="pi pi-dollar text-4xl xl:text-6xl mb-2 xl:mb-4"></i>
-            <p className='line-height-2 text-sm xl:text-base p-1 xl:p-3'>Pix:(45)99902-3640      <h4>Eduardo H.</h4></p>
+            <p className='line-height-2 text-mob xl:text-base p-1 xl:p-3'>Pix:(45)99902-3640      <h4>Eduardo H.</h4></p>
        
           </li>
         </ul>

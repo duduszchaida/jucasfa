@@ -20,10 +20,22 @@ html {
   list-style: none;
   display: flex;
   margin: 0;
+  font-size: 18px;
   padding: 0;
   margin-left: auto; /* Empurra a lista para a direita */
 }
-
+@media (max-width:680px) {
+	.nav {
+		font-size: 17px;
+		margin: 32px auto auto auto!important;
+	}
+	header ul.nav li{
+		margin: 0 10px!important;
+	}
+	.text-mob{
+		font-size: 0.8rem !important;
+	}
+}
 
 .carousel-item {
     display: flex;

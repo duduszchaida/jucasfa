@@ -18,8 +18,8 @@ function Querigma() {
   ];
 
   const opts = {
-    height: '390',
-    width: '640',
+    height: '585',
+    width: '960',
     playerVars: {
       autoplay: 1,
     },
@@ -27,35 +27,18 @@ function Querigma() {
 
   const itemTemplate = (item) => {
     return (
-      <div className="carousel-item" onClick={() => setMainVideoId(item.id)}>
+      <div className="carousel-item-querigma" onClick={() => setMainVideoId(item.id)}>
         <img src={`https://img.youtube.com/vi/${item.id}/0.jpg`} alt={item.title} />
         <h4>{item.title}</h4>
       </div>
     );
   };
 
-  const responsiveOptions = [
-    {
-      breakpoint: '1024px',
-      numVisible: 3,
-      numScroll: 3
-    },
-    {
-      breakpoint: '768px',
-      numVisible: 2,
-      numScroll: 2
-    },
-    {
-      breakpoint: '560px',
-      numVisible: 1,
-      numScroll: 1
-    }
-  ];
 
   return (
     <div className="querigma-page">
       <div className="main-video">
-        <YouTube videoId={mainVideoId} opts={opts} />
+        <YouTube videoId={mainVideoId} opts={opts} className='ml-5' />
       </div>
       <div className="side-carousel">
         <Carousel value={videos} itemTemplate={itemTemplate} numVisible={3} numScroll={1} orientation="vertical"  />

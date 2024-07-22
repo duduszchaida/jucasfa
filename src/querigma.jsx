@@ -4,7 +4,7 @@ import YouTube from 'react-youtube';
 import 'primereact/resources/themes/saga-blue/theme.css'; // tema primereact
 import 'primereact/resources/primereact.min.css'; // componentes primereact
 import 'primeicons/primeicons.css'; // ícones primereact
-import '../querigma.css'
+import './querigma.css'
 
 function Querigma() {
   
@@ -37,10 +37,10 @@ function Querigma() {
 
   return (
     <div className="querigma-page">
-      <div className="main-video">
+      <div className="main-video mt-8">
         <YouTube videoId={mainVideoId} opts={opts} className='ml-5' />
       </div>
-      <div className="side-carousel">
+      <div className="side-carousel mt-8">
         <Carousel value={videos} itemTemplate={itemTemplate} numVisible={3} numScroll={1} orientation="vertical"  />
         
       </div>

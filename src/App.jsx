@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Querigma from './components/querigma';
+import Querigma from './querigma';
 import Principal from './components/principal';
 import Header from './components/header';
 import Footer from './components/footer';

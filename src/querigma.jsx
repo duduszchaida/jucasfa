@@ -40,7 +40,7 @@ function Querigma() {
       <div className="main-video mt-8">
         <YouTube videoId={mainVideoId} opts={opts} className='ml-5' />
       </div>
-      <div className="side-carousel mt-8">
+      <div className="side-carousel mt-8 p-2">
         <Carousel value={videos} itemTemplate={itemTemplate} numVisible={3} numScroll={1} orientation="vertical"  />
         
       </div>

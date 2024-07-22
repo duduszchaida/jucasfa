@@ -23,12 +23,12 @@
     flex-direction: column;
     height: 100%;
     max-height: 580px;
-    overflow-y: auto;
-    background: rgba(80, 48, 30, 0.836);
-
     
+    background: rgba(80, 48, 30, 0.836);
   }
-  
+  .p-carousel-vertical{
+    overflow-y: auto;
+  }
   .carousel-item-querigma {
     cursor: pointer;
     padding: 10px 20px;

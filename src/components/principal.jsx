@@ -85,11 +85,12 @@ function Principal() {
     
           <li className="about-right xl:col-7 md:col-6">
             <h2>Rimas em 3,2,1, vai</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam excepturi, similique aut nesciunt, illo tenetur deleniti ab soluta nisi impedit ipsam consectetur magni! Atque sunt voluptate fuga, perspiciatis corrupti maiores dignissimos deserunt cupiditate, nihil inventore. Lorem ipsum dolor sit amet</p>
-            <p><i className="fa fa-arrow-right"></i> Lorem ipsum dolor sit amet</p>
-            <p><i className="fa fa-arrow-right"></i> deleniti ab soluta nisi impedit</p>
-            <p><i className="fa fa-arrow-right"></i> maiores dignissimos deserunt cupiditate</p>
-            <p><i className="fa fa-arrow-right"></i> illo tenetur deleniti ab soluta nisi</p>
+            <p>Somos o grupo de jovens JUCASFA, fundado em 1997. Nosso grupo é profundamente devoto a São Francisco de Assis, nosso padroeiro, no qual levamos no nome do nosso grupo: Juventude Católica São Francisco de Assis. Nos reunimos na salinha de catequese da Capela Santa Rosa de Lima, onde cultivamos nossa fé e promovemos a união e o crescimento espiritual dos jovens de nossa comunidade de um jeito jovem e divertido, através de: 
+</p>
+            <p><i className="fa fa-arrow-right"></i> Gincanas</p>
+            <p><i className="fa fa-arrow-right"></i> Retiros</p>
+            <p><i className="fa fa-arrow-right"></i> e muito mais</p>
+            <p>Venha nos conhecer e participar dessa jornada de fé e amizade!</p>
           </li>
         </ul>
       </section>

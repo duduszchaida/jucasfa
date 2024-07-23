@@ -20,10 +20,14 @@ function Querigma() {
   const opts = {
     height: '585',
     width: '960',
-    playerVars: {
-      autoplay: 1,
-    },
+   
   };
+  const optsmob = {
+    height: '290',
+    width: '340',
+    
+  };
+
 
   const itemTemplate = (item) => {
     return (
@@ -37,12 +41,19 @@ function Querigma() {
 
   return (
     <div className="querigma-page">
-      <div className="main-video mt-8">
+      <h2 className='videomob padding-mob'> Querigma </h2>
+      <div className='col-0 xl:col-1'></div>
+      <div className="main-video xl:col-7 xl:mx-8 mtquerigma videodesktop">
         <YouTube videoId={mainVideoId} opts={opts} className='ml-5' />
       </div>
-      <div className="side-carousel mt-8 p-2">
-        <Carousel value={videos} itemTemplate={itemTemplate} numVisible={3} numScroll={1} orientation="vertical"  />
-        
+      <div className="main-video col-12 mt-5 videomob">
+        <YouTube videoId={mainVideoId} opts={optsmob} className='w-full'  />
+      </div>
+      <div className="side-carousel col-6 xl:col-2 mtquerigma p-2 videodesktop">
+        <Carousel value={videos} itemTemplate={itemTemplate} numVisible={3} numScroll={1} orientation="vertical"  /> 
+      </div>
+      <div className="side-carousel col-12 xl:col-2 videomob p-2">
+        <Carousel value={videos} itemTemplate={itemTemplate} numVisible={2} numScroll={1}  /> 
       </div>
     </div>
   );

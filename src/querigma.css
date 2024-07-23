@@ -2,7 +2,15 @@
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  padding: 20px;
+  padding: 0 20px;
+  position: relative;
+  justify-content: center;
+  min-height: 92vh;
+  color: #fff;
+  text-align: center;
+}
+.mtquerigma{
+  margin-top: 10rem!important;
 }
 .querigma-page {
   background: linear-gradient(rgba(44, 42, 35, 0.6), rgba(148, 134, 116, 0.6)), url("../sao-tomas.jpg");
@@ -52,4 +60,24 @@
   margin-top: 10px;
   font-size: 1rem;
   color: black;
+}
+@media (max-width:680px) {
+  .videodesktop{
+    display: none;
+ }
+ .querigma-page{
+  display: block;
+ }
+ .w-full > iframe{
+  max-width: 100%;
+ }
+ .padding-mob{
+  padding-top: 8rem;
+ }
+}
+
+@media (min-width:681px) {
+  .videomob{
+    display: none;
+ }
 }

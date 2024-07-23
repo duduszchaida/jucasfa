@@ -84,13 +84,13 @@ function Principal() {
           </li>
     
           <li className="about-right xl:col-7 md:col-6">
-            <h2>Rimas em 3,2,1, vai</h2>
-            <p>Somos o grupo de jovens JUCASFA, fundado em 1997. Nosso grupo é profundamente devoto a São Francisco de Assis, nosso padroeiro, no qual levamos no nome do nosso grupo: Juventude Católica São Francisco de Assis. Nos reunimos na salinha de catequese da Capela Santa Rosa de Lima, onde cultivamos nossa fé e promovemos a união e o crescimento espiritual dos jovens de nossa comunidade de um jeito jovem e divertido, através de: 
+            <h2>Rimas em 3, 2, 1, vai!!!</h2>
+            <p className='text-justify'>Somos o grupo de jovens JUCASFA, fundado em 1997. Nosso grupo é profundamente devoto a São Francisco de Assis, nosso padroeiro, no qual levamos no nome do nosso grupo: Juventude Católica São Francisco de Assis.<br/> Nos reunimos na salinha de catequese da Capela Santa Rosa de Lima, onde cultivamos nossa fé e promovemos a união e o crescimento espiritual dos jovens de nossa comunidade de um jeito jovem e divertido, através de: 
 </p>
-            <p><i className="fa fa-arrow-right"></i> Gincanas</p>
-            <p><i className="fa fa-arrow-right"></i> Retiros</p>
-            <p><i className="fa fa-arrow-right"></i> e muito mais</p>
-            <p>Venha nos conhecer e participar dessa jornada de fé e amizade!</p>
+            <p className='ml-2'><i className="pi pi-arrow-right mr-2"></i>  Gincanas,</p>
+            <p  className='ml-2'><i className="pi pi-arrow-right mr-2"></i>  Retiros,</p>
+            <p  className='ml-2'><i className="pi pi-arrow-right mr-2"></i>  e muito mais!</p>
+            <p className='text-center'>Venha nos conhecer e participar dessa jornada de fé e amizade!</p>
           </li>
         </ul>
       </section>

@@ -8,12 +8,17 @@ import './querigma.css'
 
 function Querigma() {
   
-  const [mainVideoId, setMainVideoId] = useState('dQw4w9WgXcQ'); // ID do vídeo principal do YouTube
+  const [mainVideoId, setMainVideoId] = useState('rQhy1ziljcU'); // ID do vídeo principal do YouTube
 
   const videos = [
-    { id: 'dQw4w9WgXcQ', title: 'Video 1' },
-    { id: 'k85mRPqvMbE', title: 'Video 2' },
-    { id: '3JZ_D3ELwOQ', title: 'Video 3' }
+    { id: 'rQhy1ziljcU', title: '1 - As Sagradas Escrituras' },
+    { id: 'TfdnhMqnlXM', title: '2 - Simbolismo' },
+    { id: 'SGgvzye6kkA', title: '2.2 - Simbolismo dos números' },
+    { id: 'SRycTwhVuQU', title: '3 - Iconografia' },
+    { id: 'qaPpjYKfANw', title: '3.2 - Iconografia' },
+    { id: 'xf5D9VJaYcc', title: '4 - Criação' },
+    { id: 's7dY3dyTtnQ', title: '4.2 - Sobre a obra dos seis dias' }
+
    
   ];
 
@@ -42,15 +47,15 @@ function Querigma() {
   return (
     <div className="querigma-page">
       <h2 className='videomob padding-mob'> Querigma </h2>
-      <div className='col-0 xl:col-1'></div>
-      <div className="main-video xl:col-7 xl:mx-8 mtquerigma videodesktop">
+      
+      <div className="main-video xl:col-7  mtquerigma videodesktop">
         <YouTube videoId={mainVideoId} opts={opts} className='ml-5' />
       </div>
       <div className="main-video col-12 mt-5 videomob">
         <YouTube videoId={mainVideoId} opts={optsmob} className='w-full'  />
       </div>
-      <div className="side-carousel col-6 xl:col-2 mtquerigma p-2 videodesktop">
-        <Carousel value={videos} itemTemplate={itemTemplate} numVisible={3} numScroll={1} orientation="vertical"  /> 
+      <div className="side-carousel col-6 xl:col-2 mtquerigma p-2 videodesktop ml-auto">
+        <Carousel value={videos} itemTemplate={itemTemplate} numVisible={7} numScroll={1} orientation="vertical"  /> 
       </div>
       <div className="side-carousel col-12 xl:col-2 videomob p-2">
         <Carousel value={videos} itemTemplate={itemTemplate} numVisible={2} numScroll={1}  /> 

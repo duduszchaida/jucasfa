@@ -54,7 +54,7 @@ function Principal() {
   useEffect(() => {
     async function fetchEvangelho() {
       try {
-        const response = await axios.get('/api');
+        const response = await axios.get('./api');
         const texto = response.data.today.readings.gospel.text;
         // Formata o texto antes de definir o estado
         setEvangelho(formatText(texto));

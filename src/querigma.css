@@ -67,6 +67,7 @@
  }
  .querigma-page{
   display: block;
+  padding-bottom: 16px!important;
  }
  .w-full > iframe{
   max-width: 100%;

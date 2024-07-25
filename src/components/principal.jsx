@@ -1,10 +1,12 @@
 import axios from 'axios';
 import '../App.css';
 import { useState, useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import { Carousel } from 'primereact/carousel';
 import 'primereact/resources/themes/saga-blue/theme.css'; // tema primereact
 import 'primereact/resources/primereact.min.css'; // componentes primereact
 import 'primeicons/primeicons.css'; // ícones primereact
+import { Button } from 'primereact/button';
 
 function Principal() {
   
@@ -67,6 +69,16 @@ useEffect(() => {
     fetchEvangelho();
   }, []);
 
+ 
+    const [isExpanded, setIsExpanded] = useState(false);
+    const isMobile = useMediaQuery({ maxWidth: 680 }); 
+  
+    const toggleExpanded = () => {
+      setIsExpanded(!isExpanded);
+    };
+  
+    const maxLength = 125; 
+    const shortText = evangelho.slice(0, maxLength);
 
   return (
     <>
@@ -99,7 +111,11 @@ useEffect(() => {
         <div className="msg-content">
           <h2>Evangelho do dia</h2>
           <br />
-          <p id="evangelho-texto">{evangelho}</p>
+          <p id="evangelho-texto"> {isMobile && !isExpanded ? `${shortText}...` : evangelho}</p>
+          {isMobile && (
+          <Button className="w-4 p-1"  severity="secondary" onClick={toggleExpanded} label= {isExpanded ? 'Ver menos' : 'Ver mais'} />
+          
+            )}
         </div>
       </section>
       <section className="services-area p-0" id="services">

@@ -51,11 +51,11 @@ function Principal() {
   };
   const [evangelho, setEvangelho] = useState('Carregando...');
 
-  useEffect(() => {
+useEffect(() => {
     async function fetchEvangelho() {
       try {
-        const response = await axios.get('../api/');
-        const texto = response.data.today.readings.gospel.text;
+        const response = await axios.get('https://liturgiadiaria.site');
+        const texto = response.data.evangelho.texto;
         // Formata o texto antes de definir o estado
         setEvangelho(formatText(texto));
       } catch (error) {
@@ -66,6 +66,7 @@ function Principal() {
 
     fetchEvangelho();
   }, []);
+
 
   return (
     <>

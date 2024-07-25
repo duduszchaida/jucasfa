@@ -55,7 +55,7 @@ function Principal() {
     async function fetchEvangelho() {
       try {
         const response = await axios.get('/api/');
-        const texto = response.today.readings.gospel.text;
+        const texto = response.data.today.readings.gospel.text;
         // Formata o texto antes de definir o estado
         setEvangelho(formatText(texto));
       } catch (error) {

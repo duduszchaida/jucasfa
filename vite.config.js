@@ -4,9 +4,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    proxy: {
+    proxy: 
       '/api': {
-        target: 'https://api-liturgia-diaria.vercel.app/',
+        target: 'https://api-liturgia-diaria.vercel.app',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }

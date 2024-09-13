@@ -14,7 +14,7 @@ function Principal() {
   const eventos = [
     { id: 1, img: "rocha.jpg", title: "3º Rocha", link: "https://www.facebook.com/media/set/?set=a.472926738206430&type=3" },
     { id: 2, img: "acampacasfa.jpg", title: "1º AcampaCasfa", link: "https://drive.google.com/drive/folders/1Dnw9NdgL--ApPUMGc1e6hBBUAwEyHiGp" },
-    { id: 3, img: "gincana-interna.jpeg", title: "7ª Gincana Interna", link: "jucasfa.vercel.app" },
+    { id: 3, img: "gincana-interna.jpeg", title: "7ª Gincana Interna", link: "https://drive.google.com/drive/folders/17HuN8inflvpj2zU5hvCbwiwgIVM3tVVT" },
     { id: 4, img: "niver-jucao.jpg", title: "27º Aniversário do Jucasfa", link: "https://drive.google.com/drive/folders/1HWMoChvujs7Um97_D2eu-4w0rYeWNrcG" },
     { id: 5, img: "gincana-externa.jpg", title: "14ª Gincana Externa", link: "https://www.facebook.com/media/set/?set=a.618685883630514&type=3" }
   ];

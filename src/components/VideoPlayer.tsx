@@ -26,7 +26,7 @@ export function VideoPlayer({ lesson, onNextLesson, onPreviousLesson, onToggleSi
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <h1 className="text-xl lg:text-2xl font-bold">{lesson.title}</h1>
           <p className="lg:hidden text-gray-600">{lesson.description}</p>
-          <div className="flex flex-row justify-between gap-2 mt-3">
+          <div className="flex flex-row justify-between gap-2 mt-1 lg:mt-3">
             {/* Botão de abrir a sidebar */}
             {onToggleSidebar && (
               <button
@@ -52,7 +52,7 @@ export function VideoPlayer({ lesson, onNextLesson, onPreviousLesson, onToggleSi
         
         <p className="hidden lg:block mt-2 text-gray-600">{lesson.description}</p>
 
-        <div className="flex flex-row justify-between gap-2 mt-3">
+        <div className="flex flex-row justify-between gap-2 mt-1 lg:mt-3">
           <button
             onClick={onPreviousLesson}
             className="flex items-center justify-center gap-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors disabled:opacity-50 w-full sm:w-auto text-sm sm:text-base px-3 sm:px-4 py-1 sm:py-2"

@@ -22,13 +22,17 @@ export function Sidebar({ courses, currentCourse, currentTopic, currentLesson, o
       ${isOpen ? 'translate-x-0' : '-translate-x-full'}
     `}>
       <div className="p-4 border-b border-gray-800 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 pr-5">
           <BookOpen className="w-6 h-6" />
           <h1 className="text-xl font-bold">Querigma do Jucão</h1>
         </div>
-        <button onClick={onClose} className="lg:hidden text-white">
-          <X className="w-6 h-6" />
-        </button>
+        <button
+  onClick={onClose}
+  className="lg:hidden absolute  right-4 bg-gray-700 hover:bg-gray-600 text-white p-1 rounded-full transition flex items-center justify-center"
+>
+  <ArrowLeft cassa-me="w-8 h-8" />
+</button>
+
       </div>
       
       <nav className="p-4 overflow-y-auto h-[calc(100vh-4rem)]">
@@ -53,13 +57,7 @@ export function Sidebar({ courses, currentCourse, currentTopic, currentLesson, o
           </div>
         ))}
       </nav>
-      <button
-  onClick={onClose}
-  className="lg:hidden absolute bottom-4 right-4 bg-gray-700 hover:bg-gray-600 text-white p-2 rounded-full transition flex items-center justify-center"
->
-  <ArrowLeft cassa-me="w-8 h-8" />
-</button>
-
+    
     </div>
   );
 }

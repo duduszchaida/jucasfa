@@ -5,7 +5,7 @@ const Torneio = () => {
   
 
   useEffect(() => {
-    window.location.href = "/RegulamentoKingsCasfa OFICIAL!.pdf"; // Redireciona para o PDF na pasta public
+    window.location.href = "/RegulamentoTorneio.pdf"; // Redireciona para o PDF na pasta public
   }, []);
 
   return null;

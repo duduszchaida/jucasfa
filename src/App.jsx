@@ -7,7 +7,7 @@ import Footer from './components/footer';
 import 'primereact/resources/themes/saga-blue/theme.css'; // tema primereact
 import 'primereact/resources/primereact.min.css'; // componentes primereact
 import 'primeicons/primeicons.css'; // ícones primereact
-
+import Torneio from './torneio';
 
 function App() {
   
@@ -17,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Principal />} />
         <Route path="/querigma" element={<Querigma />} />
+        <Route path="/torneio" element={<Torneio />} />
       </Routes>
       <Footer />
     </BrowserRouter>
